@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function openNewHTML() {
+            window.location.href = "info scroll3.html";
+        }
+    </script>
+
+    <style>
+      body {
+            margin: 0;
+            padding: 0;
+        }
+        .header-2 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #f2f2f2;
+        }
+
+        .header-2 img {width: 100%;
+        height:100%}
+
+        .scroll-container {
+            height: calc(100vh - 246.18px);
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 0.1em;
+            background-color: transparent;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+
+        .scroll-container img {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin-bottom: 0px;
+            max-width: 100%;
+            height: auto;
+        }
+
+   
+
+    </style>
+</head>
+<body>
+    <div class="header-2" onclick="openNewHTML()">
+        <img src="image_2/Group 119.png" alt="고정 상단">
+    </div>
+
+    <div class="scroll-container">
+        <img src="image_2/Group 230.png" alt="이미지 10"> 
+        <img src="image_2/Group 198.png" alt="이미지 1">
+        <img src="image_2/Group 199.png" alt="이미지 2">
+        <img src="image_2/Group 200.png" alt="이미지 3">
+        <img src="image_2/Group 201.png" alt="이미지 4">
+        <img src="image_2/Group 202.png" alt="이미지 5">
+        <img src="image_2/Group 203.png" alt="이미지 6">
+        <img src="image_2/Group 204.png" alt="이미지 7">
+        <img src="image_2/Group 205.png" alt="이미지 8">
+        <img src="image_2/Group 206.png" alt="이미지 9">
+ 
+    </div>
+</body>
+</html>
