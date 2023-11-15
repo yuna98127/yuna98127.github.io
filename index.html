@@ -64,40 +64,18 @@
        
         .header-1 img {width: 100%;
         height: 100%;}
-       
 
-
-        .scroll-container {
-            width:100%;
-            height: 100%;
-            height: calc(100vh - 800px);
-            overflow-y: scroll;
-            display:grid;
-            grid-template-columns: repeat(2, 2fr);
-            gap: 0px;
-            padding: 0px;
-            position:relative;
-            
-            
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px;
+            margin-top: 0px;
         }
 
-        .scroll-container::-webkit-scrollbar {
-            width: 0.1em;
-            background-color: transparent;
-        }
-
-        .scroll-container::-webkit-scrollbar-thumb {
-            background-color: transparent;
-        }
-        
-        .scroll-container img {
+        .image-grid img {
             width: 100%;
-            height:100%;
-            top: 0;
-            left: 0;
-            margin-bottom: 0px;
-            max-width:100%;
-        }
+            height: 100%;
+        }      
 
     </style>
 </head>
@@ -109,16 +87,13 @@
         <img src="image/샹단사진.png" alt="상단">
     </div> 
 
-
-
-    <h class="scroll-container">
-        <img src="image/Group 171.png" alt="이미지 3" onclick="openInfoScroll1()"></div>
-        <img src="image/Group 172.png" alt="이미지 6" onclick="openInfoScroll2()"></div>
-
-        <img src="image/Group 173.png" alt="이미지 4" onclick="openInfoScroll3()"></div>
-        <img src="image/Group 174.png" alt="이미지 7" onclick="openInfoScroll4()"></div>
-        <img src="image/Group 175.png" alt="이미지 5" onclick="openInfoScroll5()"></div>
-        <img src="image/Group 176.png" alt="이미지 8" onclick="openInfoScroll6()"></div> 
+    <div class="image-grid">
+        <img src="image/Group 171.png" alt="이미지 3" onclick="openInfoScroll1()">
+        <img src="image/Group 172.png" alt="이미지 6" onclick="openInfoScroll2()">
+        <img src="image/Group 173.png" alt="이미지 4" onclick="openInfoScroll3()">
+        <img src="image/Group 174.png" alt="이미지 7" onclick="openInfoScroll4()">
+        <img src="image/Group 175.png" alt="이미지 5" onclick="openInfoScroll5()">
+        <img src="image/Group 176.png" alt="이미지 8" onclick="openInfoScroll6()"> 
     </div>
 </body>
 </html>
