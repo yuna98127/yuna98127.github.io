@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function openNewHTML() {
+            window.location.href = "info scroll3.html";
+        }
+    </script>
+
+    <style>
+      body {
+            margin: 0;
+            padding: 0;
+        }
+        .header-2 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #f2f2f2;
+        }
+
+        .header-2 img {width: 100%;
+        height:100%}
+
+        .scroll-container {
+            height: calc(100vh - 246.18px);
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 0.1em;
+            background-color: transparent;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+
+        .scroll-container img {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin-bottom: 0px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-2" onclick="openNewHTML()">
+        <img src="image_1/Group 119.png" alt="고정 상단">
+    </div>
+
+    <div class="scroll-container">
+        <img src="image_1/Group 195.png" alt="이미지 3">
+        <img src="image_1/Group 196.png" alt="이미지 3">
+    
+        
+    </div>
+</body>
+</html>

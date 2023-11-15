@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+        function openNewHTML() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+    <script>
+        function openInfoScroll1() {
+            window.location.href = "index_after scroll.html";
+        }
+
+        function openInfoScroll2() {
+            window.location.href = "index_after scroll_2.html";
+        }
+
+        function openInfoScroll3() {
+            window.location.href = "index_after scroll_3.html";
+        }
+
+        function openInfoScroll4() {
+            window.location.href = "index_after scroll_4.html";
+        }
+
+        function openInfoScroll5() {
+            window.location.href = "index_after scroll_5.html";
+        }
+
+        function openInfoScroll6() {
+            window.location.href = "index_after scroll_6.html";
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-2 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #f2f2f2;
+        }
+
+        .header-2 img {width: 100%;
+        height:100%}
+
+        .header-1 {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: #f2f2f2;
+        }
+       
+        .header-1 img {width: 100%;
+        height: 100%;}
+       
+
+
+        .scroll-container {
+            width:100%;
+            height: 100%;
+            height: calc(100vh - 800px);
+            overflow-y: scroll;
+            display:grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 0px;
+            padding: 0px;
+            position:relative;
+            
+            
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 0.1em;
+            background-color: transparent;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+        
+        .scroll-container img {
+            width: 100%;
+            height:100%;
+            top: 0;
+            left: 0;
+            margin-bottom: 0px;
+            max-width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header-1" onclick="openNewHTML()">
+        <img src="image/Group 390.png" alt="맨 위">
+    </div>
+    <div class="header-2">
+        <img src="image/Group 389.png" alt="상단">
+    </div> 
+
+
+
+    <h class="scroll-container">
+        <img src="image/Group 391.png" alt="이미지 3" onclick="openInfoScroll1()"></div>
+        <img src="image/Group 394.png" alt="이미지 6" onclick="openInfoScroll2()"></div>
+
+        <img src="image/Group 392.png" alt="이미지 4" onclick="openInfoScroll3()"></div>
+        <img src="image/Group 395.png" alt="이미지 7" onclick="openInfoScroll4()"></div>
+        <img src="image/Group 393.png" alt="이미지 5" onclick="openInfoScroll5()"></div>
+        <img src="image/Group 396.png" alt="이미지 8" onclick="openInfoScroll6()"></div> 
+    </div>
+</body>
+</html>
